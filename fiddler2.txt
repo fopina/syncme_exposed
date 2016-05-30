@@ -1,0 +1,365 @@
+This is a fiddler2 session dump using Sync.ME app in an android phone
+Some info has been changed (for privacy)
+ 
+------------------------------------------------------------------
+
+GET https://s3.amazonaws.com/syncme-misc/mobile/android/config.json HTTP/1.1
+Host: s3.amazonaws.com
+Connection: Keep-Alive
+Accept-Encoding: gzip
+User-Agent: okhttp/2.5.0
+
+
+HTTP/1.1 200 OK
+x-amz-id-2: EOfGC1V42JViK5c0Nx4G89GzNfhqSoClcwg8ZQzC4jJ3xVHenzKNxIs3SKIpddB8tmC+Is8hYdk=
+x-amz-request-id: A9D4E9E821F2B311
+Date: Mon, 30 May 2016 09:14:34 GMT
+Last-Modified: Mon, 23 May 2016 13:24:34 GMT
+ETag: "2618223cd85739e5b9cc862dd8ba439e"
+Accept-Ranges: bytes
+Content-Type: application/json
+Content-Length: 1160
+Server: AmazonS3
+
+{
+  "file_version": 4,
+  "configs": [
+    {
+      "app_market_version": "all",
+      "app_configs": [
+        {
+          "api_level": "all",
+          "api_level_configs": {
+            "update_config_file_interval_minutes": 1440,
+            "is_linkedin_enabled": true,
+            "linkedin_call_frequency_in_minutes": 10080,
+			 "is_gp_enabled": true,
+            "gp_call_frequency_in_minutes": 10080,
+			"starting_time_for_caller_id_counter":1430438400000,
+			"starting_count_for_caller_id_counter": 1000000000,
+			"rate_per_sec_for_caller_id_counter": 5,
+			"is_show_upload_contacts_dialog": true,
+			"show_upload_contacts_dialog_text": 0,
+			"is_taggable_friends":true,
+			"search_activity_result_found_ad_enabled":true,
+			"search_activity_result_found_ad_interval":1,
+			"search_activity_result_found_platform":1,
+			"main_activity_shown_ad_enabled":true,
+			"main_activity_shown_ad_interval":2,
+			"main_activity_shown_ad_platform":1,
+			"main_activity_delay_showing_ads":259200000,
+			"is_show_ad_missed_calls_activity":true,
+			"min_num_of_friends_for_getting_premium":7
+          }
+        }
+      ]
+    }
+  ]
+}
+
+------------------------------------------------------------------
+
+POST https://api.sync.me/api/first_launch HTTP/1.1
+Content-Length: 115
+Host: api.sync.me
+Connection: Keep-Alive
+Accept-Encoding: gzip
+User-Agent: Sync.ME Android3.4.6
+
+params={"APPLICATION_VERSION":"3.4.6","version_number":215,"APPLICATION_ID":"8a078650-5acd-11e1-b86c-0800200c9a66"}
+HTTP/1.1 200 OK
+Content-Type: application/json
+Date: Mon, 30 May 2016 09:14:33 GMT
+Server: nginx/1.1.19
+Content-Length: 42
+Connection: keep-alive
+
+{"error_description": "", "error_code": 0}
+
+------------------------------------------------------------------
+
+POST https://api.sync.me/api/register_2 HTTP/1.1
+Content-Length: 586
+Host: api.sync.me
+Connection: Keep-Alive
+Accept-Encoding: gzip
+User-Agent: Sync.ME Android3.4.6
+
+params={"device_uid":"356907061343387","country":"PT","phone":"351916262333","is_push":false,"google_ads_id":"52fd32e0-5e20-4ff1-b0cd-daf7cc8712df","android_id":"835c824e5129e7da","contacts":{"INT_DIALING_CODE":"","PHONE_NUMBER":"","DEVICE_TYPE":"ANDROID","OPERATION_SYSTEM":"Android 5.0.2 SDK 21","LOCATION_COUNTRY":"PT","LOCATION_ZIPCODE":"0","DEVICE_UDID":"356907061343387","CONTACTS":[],"google_ads_id":"52fd32e0-5e20-4ff1-b0cd-daf7cc8712df","android_id":"835c824e5129e7da"},"APPLICATION_VERSION":"3.4.6","version_number":215,"APPLICATION_ID":"8a078650-5acd-11e1-b86c-0800200c9a66"}
+HTTP/1.1 200 OK
+Content-Encoding: gzip
+Content-Type: application/json
+Date: Mon, 30 May 2016 09:14:54 GMT
+Server: nginx/1.1.19
+Content-Length: 86
+Connection: keep-alive
+
+��������VJ-*�/�OI-N.�,(���S�RPR�QP*��Ns�
+|�����+R�|\2}�rC��|@J z��SR��j�+ْM���
+
+------------------------------------------------------------------
+
+POST https://api.sync.me/api/get_time HTTP/1.1
+Content-Length: 155
+Host: api.sync.me
+Connection: Keep-Alive
+Accept-Encoding: gzip
+User-Agent: Sync.ME Android3.4.6
+
+params={"ACCESS_TOKEN":"LpLKaRBnkxeVLDiMFmUCfx","APPLICATION_VERSION":"3.4.6","version_number":215,"APPLICATION_ID":"8a078650-5acd-11e1-b86c-0800200c9a66"}
+HTTP/1.1 200 OK
+Content-Encoding: gzip
+Content-Type: text/html; charset=utf-8
+Date: Mon, 30 May 2016 09:14:54 GMT
+Server: nginx/1.1.19
+Content-Length: 75
+Connection: keep-alive
+
+��������VJ-*�/�OI-N.�,(���S�RP��V�Q�J%秤��)�%�@����������I-�oi��@���
+
+------------------------------------------------------------------
+
+POST https://api.sync.me/api/caller_id/get_spam HTTP/1.1
+Content-Length: 97
+Host: api.sync.me
+Connection: Keep-Alive
+Accept-Encoding: gzip
+User-Agent: Sync.ME Android3.4.6
+
+params={"ACCESS_TOKEN":"LpLKaRBnkxeVLDiMFmUCfx","APPLICATION_VERSION":"3.4.6","version_number":1}
+HTTP/1.1 200 OK
+Content-Type: application/json
+Date: Mon, 30 May 2016 09:14:55 GMT
+Server: nginx/1.1.19
+Content-Length: 58
+Connection: keep-alive
+
+{"error_description": "OK", "error_code": 0, "phones": []}
+
+------------------------------------------------------------------
+
+POST https://api.sync.me/api/caller_id/get_top_numbers HTTP/1.1
+Content-Length: 97
+Host: api.sync.me
+Connection: Keep-Alive
+Accept-Encoding: gzip
+User-Agent: Sync.ME Android3.4.6
+
+params={"ACCESS_TOKEN":"LpLKaRBnkxeVLDiMFmUCfx","APPLICATION_VERSION":"3.4.6","version_number":1}
+HTTP/1.1 200 OK
+Content-Encoding: gzip
+Content-Type: application/json
+Date: Mon, 30 May 2016 09:14:55 GMT
+Server: nginx/1.1.19
+Content-Length: 123
+Connection: keep-alive
+
+�������-�A
+�@@ѫ��u"��\��}���d���n.���֬
+#;�R��B�������F����T��Y��9�z����%�����L��J�G)NV�:�����b��X��"pc�u���
+
+------------------------------------------------------------------
+
+POST https://api.sync.me/api/birthdays/get_birthdays_by_phones HTTP/1.1
+Content-Length: 167
+Host: api.sync.me
+Connection: Keep-Alive
+Accept-Encoding: gzip
+User-Agent: Sync.ME Android3.4.6
+
+params={"phones":[],"ACCESS_TOKEN":"LpLKaRBnkxeVLDiMFmUCfx","APPLICATION_VERSION":"3.4.6","version_number":215,"APPLICATION_ID":"8a078650-5acd-11e1-b86c-0800200c9a66"}
+HTTP/1.1 200 OK
+Content-Encoding: gzip
+Content-Type: application/json
+Date: Mon, 30 May 2016 09:14:55 GMT
+Server: nginx/1.1.19
+Content-Length: 67
+Connection: keep-alive
+
+��������VJ-*�/�OI-N.�,(���S�RP��V�Q�J%秤��)�%�@ftl-��"�&8���
+
+------------------------------------------------------------------
+
+POST https://api.sync.me/api/mecards2/find_by_phone HTTP/1.1
+Content-Length: 179
+Host: api.sync.me
+Connection: Keep-Alive
+Accept-Encoding: gzip
+User-Agent: Sync.ME Android3.4.6
+
+params={"data":["351916262333"],"ACCESS_TOKEN":"LpLKaRBnkxeVLDiMFmUCfx","APPLICATION_VERSION":"3.4.6","version_number":215,"APPLICATION_ID":"8a078650-5acd-11e1-b86c-0800200c9a66"}
+HTTP/1.1 200 OK
+Content-Encoding: gzip
+Content-Type: application/json
+Date: Mon, 30 May 2016 09:14:55 GMT
+Server: nginx/1.1.19
+Content-Length: 69
+Connection: keep-alive
+
+...
+
+------------------------------------------------------------------
+
+GET https://s3.amazonaws.com/syncme-misc/top_phones/PT.txt.gz HTTP/1.1
+Connection: close
+User-Agent: Dalvik/2.1.0 (Linux; U; Android 5.0.2; SK-PHONE Build/LRX22G)
+Host: s3.amazonaws.com
+Accept-Encoding: gzip
+
+
+HTTP/1.1 200 OK
+x-amz-id-2: MyslwGKj9CZlXdNJC40DXH9ZaBOiBVPlthjN4SyswKsb0K9KCCg1MSp+pK7BomT47/Ni28zk/DM=
+x-amz-request-id: 8338B1C0E4DF94FD
+Date: Mon, 30 May 2016 09:14:57 GMT
+Last-Modified: Tue, 15 Mar 2016 23:42:31 GMT
+ETag: "2b998b09ed05f59fe0fa4fd2fe50e059"
+Accept-Ranges: bytes
+Content-Type: text/html
+Content-Length: 230746
+Server: AmazonS3
+Connection: close
+
+....
+
+------------------------------------------------------------------
+
+POST https://api.sync.me/api/albums/set_push_id HTTP/1.1
+Content-Length: 323
+Host: api.sync.me
+Connection: Keep-Alive
+Accept-Encoding: gzip
+User-Agent: Sync.ME Android3.4.6
+
+params={"ID":"CAP91bFBw9Sp4aC1eczOm0qDF2mUw3XT0N__GSt0yP4sMOO5qQVvEGVeQGyxxeqzhkfP89t2zYENRjMpBXiJgVgbD_lTieQehRfT1LuMxRvKz5X25LHsCUSeG39BBXrPTwJ0saUH2c9a","SERVICE":"ANDROID","ACCESS_TOKEN":"LpLKaRBnkxeVLDiMFmUCfx","APPLICATION_VERSION":"3.4.6","version_number":215,"APPLICATION_ID":"8a078650-5acd-11e1-b86c-0800200c9a66"}
+HTTP/1.1 200 OK
+Content-Encoding: gzip
+Content-Type: application/json
+Date: Mon, 30 May 2016 09:14:57 GMT
+Server: nginx/1.1.19
+Content-Length: 57
+Connection: keep-alive
+
+...
+
+------------------------------------------------------------------
+
+POST https://api.sync.me/api/caller_id/get_top_numbers HTTP/1.1
+Content-Length: 97
+Host: api.sync.me
+Connection: Keep-Alive
+Accept-Encoding: gzip
+User-Agent: Sync.ME Android3.4.6
+
+params={"ACCESS_TOKEN":"LpLKaRBnkxeVLDiMFmUCfx","APPLICATION_VERSION":"3.4.6","version_number":1}
+HTTP/1.1 200 OK
+Content-Encoding: gzip
+Content-Type: application/json
+Date: Mon, 30 May 2016 09:14:57 GMT
+Server: nginx/1.1.19
+Content-Length: 123
+Connection: keep-alive
+
+...
+
+------------------------------------------------------------------
+
+GET https://s3.amazonaws.com/syncme-misc/top_phones/PT.txt.gz HTTP/1.1
+Connection: close
+User-Agent: Dalvik/2.1.0 (Linux; U; Android 5.0.2; SK-PHONE Build/LRX22G)
+Host: s3.amazonaws.com
+Accept-Encoding: gzip
+
+
+HTTP/1.1 200 OK
+x-amz-id-2: 8QcxepH3Mqtiw78u3KS6lrySOZb2JqY+k4NbE8S49UuSkbe94hGA0gqlvDlenv4kcAn0RG6svsg=
+x-amz-request-id: D8CC4CC1AA731804
+Date: Mon, 30 May 2016 09:14:59 GMT
+Last-Modified: Tue, 15 Mar 2016 23:42:31 GMT
+ETag: "2b998b09ed05f59fe0fa4fd2fe50e059"
+Accept-Ranges: bytes
+Content-Type: text/html
+Content-Length: 230746
+Server: AmazonS3
+Connection: close
+
+...
+
+------------------------------------------------------------------
+
+POST https://api.sync.me/api/caller_id/caller_id/v2 HTTP/1.1
+Content-Length: 253
+Host: api.sync.me
+Connection: Keep-Alive
+Accept-Encoding: gzip
+User-Agent: Sync.ME Android3.4.6
+
+params={"phone":"351912254788","manufacturer":"Vodafone","model":"SK-PHONE","version_code":21,"is_search":true,"is_outgoing":false,"locale":"en_GB","get_hints":true,"ACCESS_TOKEN":"LpLKaRBnkxeVLDiMFmUCfx","APPLICATION_VERSION":"3.4.6","version_number":1}
+HTTP/1.1 200 OK
+Content-Encoding: gzip
+Content-Type: application/json
+Date: Mon, 30 May 2016 09:34:07 GMT
+Server: nginx/1.1.19
+Content-Length: 147
+Connection: keep-alive
+
+...
+
+------------------------------------------------------------------
+
+POST https://api.sync.me/api/birthdays/get_birthdays_by_phones HTTP/1.1
+Content-Length: 181
+Host: api.sync.me
+Connection: Keep-Alive
+Accept-Encoding: gzip
+User-Agent: Sync.ME Android3.4.6
+
+params={"phones":["351215020323"],"ACCESS_TOKEN":"LpLKaRBnkxeVLDiMFmUCfx","APPLICATION_VERSION":"3.4.6","version_number":215,"APPLICATION_ID":"8a078650-5acd-11e1-b86c-0800200c9a66"}
+HTTP/1.1 200 OK
+Content-Encoding: gzip
+Content-Type: application/json
+Date: Mon, 30 May 2016 09:39:31 GMT
+Server: nginx/1.1.19
+Content-Length: 67
+Connection: keep-alive
+
+...
+
+------------------------------------------------------------------
+
+POST https://api.sync.me/api/caller_id/caller_id/v2 HTTP/1.1
+Content-Length: 253
+Host: api.sync.me
+Connection: Keep-Alive
+Accept-Encoding: gzip
+User-Agent: Sync.ME Android3.4.6
+
+params={"phone":"351912254788","manufacturer":"Vodafone","model":"SK-PHONE","version_code":21,"is_search":true,"is_outgoing":false,"locale":"en_GB","get_hints":true,"ACCESS_TOKEN":"LpLKaRBnkxeVLDiMFmUCfx","APPLICATION_VERSION":"3.4.6","version_number":1}
+HTTP/1.1 200 OK
+Content-Encoding: gzip
+Content-Type: application/json
+Date: Mon, 30 May 2016 09:43:02 GMT
+Server: nginx/1.1.19
+Content-Length: 147
+Connection: keep-alive
+
+...
+
+------------------------------------------------------------------
+
+POST https://api.sync.me/api/caller_id/caller_id/v2 HTTP/1.1
+Content-Length: 254
+Host: api.sync.me
+Connection: Keep-Alive
+Accept-Encoding: gzip
+User-Agent: Sync.ME Android3.4.6
+
+params={"phone":"351912254788","manufacturer":"Vodafone","model":"SK-PHONE","version_code":21,"is_search":false,"is_outgoing":false,"locale":"en_GB","get_hints":true,"ACCESS_TOKEN":"LpLKaRBnkxeVLDiMFmUCfx","APPLICATION_VERSION":"3.4.6","version_number":1}
+HTTP/1.1 200 OK
+Content-Encoding: gzip
+Content-Type: application/json
+Date: Mon, 30 May 2016 09:43:11 GMT
+Server: nginx/1.1.19
+Content-Length: 147
+Connection: keep-alive
+
+...
